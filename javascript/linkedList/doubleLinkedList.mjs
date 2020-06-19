@@ -1,12 +1,14 @@
+import { LinkedList } from './linkedList.mjs';
+
 class Node {
     constructor(data) {
         this.data = data;
         this.next = null;
         this.prev = null;
     }
-}
+};
 
-class DoubleLinkedList {
+export class DoubleLinkedList extends LinkedList  {
     constructor() {
         this.length = 0;
         this.head = null;
@@ -51,15 +53,7 @@ class DoubleLinkedList {
         }
         this.length++;
     }
-
-    printList() {
-        let curNode = this.head;
-        while(curNode.next !== this.head) {
-            console.log(curNode.data);
-            curNode = curNode.next;
-        }
-    }
-}
+};
 
 let dLL = new DoubleLinkedList();
 dLL.prependNode(1);

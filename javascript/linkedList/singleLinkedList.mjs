@@ -1,3 +1,5 @@
+import { LinkedList } from './linkedList.mjs';
+
 class Node {
     // Nodes have two variables, the data the node contains and a pointer to the next Node
     constructor(data) {
@@ -6,7 +8,7 @@ class Node {
     }
 };
 
-class SingleLinkedList {
+export class SingleLinkedList extends LinkedList {
     // Setup the basic list
     constructor() {
         this.length = 0;
@@ -98,11 +100,6 @@ class SingleLinkedList {
         return deleted;
     }
 
-    // Check if the list is empty or not
-    isEmpty() {
-        return (this.length === 0 ? true : false);
-    }
-
     // Find a node with the given data
     findNode(data) {
         let curNode = this.head;
@@ -115,14 +112,6 @@ class SingleLinkedList {
             }
         }
         return curNode;
-    }
-
-    // Get the next node of the given node
-    getNextNode(node) {
-        if(node instanceof Node) {
-            return node.next;
-        }
-        return false;
     }
 
     // Iterate through the list and print all of the data
@@ -138,7 +127,6 @@ class SingleLinkedList {
 
 let sLL = new SingleLinkedList();
 
-// BUG: appendNode apparently
 // sLL.appendNode(1);
 // sLL.appendNode(2);
 // sLL.appendNode(1);

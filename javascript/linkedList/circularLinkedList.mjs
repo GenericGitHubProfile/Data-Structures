@@ -1,3 +1,5 @@
+import { LinkedList } from './linkedList.mjs';
+
 class Node {
     constructor(data) {
         this.data = data;
@@ -5,7 +7,7 @@ class Node {
     }
 };
 
-class CircularLinkedList {
+export class CircularLinkedList extends LinkedList  {
     constructor() {
         this.length = 0;
         this.head = null;
@@ -82,10 +84,6 @@ class CircularLinkedList {
         this.length--;
     }
 
-    isEmpty() {
-        return this.length === 0;
-    }
-
     findNode(data) {
         let curNode = this.head;
 
@@ -97,22 +95,6 @@ class CircularLinkedList {
             }
         }
         return curNode;
-    }
-
-    getNextNode(node) {
-        if(node instanceof Node) {
-            return node.next;
-        }
-        return false;
-    }
-
-    printList() {
-        let curNode = this.head;
-
-        while(curNode.next !== this.head) {
-            console.log(curNode);
-            curNode = curNode.next;
-        }
     }
 };
 
