@@ -64,13 +64,16 @@ bT.addNode(10)
 bT.addNode(14)
 bT.addNode(3)
 
+print("\n")
 # check correct length
 print(bT.length)
+print("\n")
 
 # adding duplicate Nodes
 bT.addNode(10)
 bT.addNode(4)
 bT.addNode(3)
+print("\n")
 
 # Display Nodes
 bT.printTree()
