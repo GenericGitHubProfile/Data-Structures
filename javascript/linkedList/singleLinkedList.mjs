@@ -1,5 +1,3 @@
-import { LinkedList } from './linkedList.mjs';
-
 class Node {
     // Nodes have two variables, the data the node contains and a pointer to the next Node
     constructor(data) {
@@ -8,14 +6,16 @@ class Node {
     }
 };
 
-export class SingleLinkedList extends LinkedList {
+class SingleLinkedList {
     // Setup the basic list
     constructor() {
         this.length = 0;
         this.head = null;
     }
 
-    // Add a node to the start of the list
+    /*
+    * Add a node to the start of the list
+    */
     prependNode(data) {
         let newNode = new Node(data);
         if(this.length === 0) {
@@ -28,7 +28,9 @@ export class SingleLinkedList extends LinkedList {
         this.length++;
     }
 
-    // Add a node to the end of the list
+    /*
+    * Add a node to the end of the list
+    */
     appendNode(data) {
         let newNode = new Node(data);
 
@@ -48,7 +50,9 @@ export class SingleLinkedList extends LinkedList {
         }
     }
 
-    // Delete single instace
+    /*
+    * Delete single instace
+    */
     deleteNode(data) {
         if(this.length === 0) return false;
         let curNode = this.head;
@@ -72,7 +76,9 @@ export class SingleLinkedList extends LinkedList {
         return false;
     }
 
-    // Deletes all node matching the data given
+    /*
+    * Deletes all node matching the data given
+    */
     deleteAllNodes(data) {
         // BUG: error when trying to remove final element
         if(this.length === 0) return false;
@@ -100,7 +106,9 @@ export class SingleLinkedList extends LinkedList {
         return deleted;
     }
 
-    // Find a node with the given data
+    /*
+    * Find a node with the given data
+    */
     findNode(data) {
         let curNode = this.head;
 
@@ -114,7 +122,23 @@ export class SingleLinkedList extends LinkedList {
         return curNode;
     }
 
-    // Iterate through the list and print all of the data
+    /*
+    * Returns next node if parameter given is a valid node
+    */
+    getNextNode(node) {
+        return ((node instanceof Node) ? node.next : false);
+    }
+
+    /*
+    * Returns whether the Linked List is empty or not
+    */
+    isEmpty() {
+        return this.length === 0;
+    }
+
+    /*
+    * Iterate through the list and print all of the data
+    */
     printList() {
         let curNode = this.head;
         while(curNode !== null) {

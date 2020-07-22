@@ -1,5 +1,3 @@
-import { LinkedList } from './linkedList.mjs';
-
 class Node {
     constructor(data) {
         this.data = data;
@@ -7,12 +5,15 @@ class Node {
     }
 };
 
-export class CircularLinkedList extends LinkedList  {
+class CircularLinkedList {
     constructor() {
         this.length = 0;
         this.head = null;
     }
 
+    /*
+    * Adds a Node to the start of the list
+    */
     prependNode(data) {
         let newNode = new Node(data);
         if(this.length === 0) {
@@ -32,6 +33,9 @@ export class CircularLinkedList extends LinkedList  {
         this.length++;
     }
 
+    /*
+    * Adds a node to the end of the List
+    */
     appendNode(data) {
         let newNode = new Node(data);
         if(this.length === 0) {
@@ -51,6 +55,9 @@ export class CircularLinkedList extends LinkedList  {
         this.length++;
     }
 
+    /*
+    * Deletes a node
+    */
     deleteNode(data) {
         console.log("start Delete");
         if(this.length === 0) {
@@ -84,6 +91,9 @@ export class CircularLinkedList extends LinkedList  {
         this.length--;
     }
 
+    /*
+    * Finds first node with suppplied data and returns it
+    */
     findNode(data) {
         let curNode = this.head;
 
@@ -95,6 +105,32 @@ export class CircularLinkedList extends LinkedList  {
             }
         }
         return curNode;
+    }
+
+    /*
+    * Returns next node if parameter given is a valid node
+    */
+    getNextNode(node) {
+        return ((node instanceof Node) ? node.next : false);
+    }
+
+    /*
+    * Returns whether the Linked List is empty or not
+    */
+    isEmpty() {
+        return this.length === 0;
+    }
+
+    /*
+    * Prints the Linked List
+    */
+    printList() {
+        let curNode = this.head;
+
+        while(curNode.next !== this.head || curNode.next !== null) {
+            console.log(curNode);
+            curNode = curNode.next;
+        }
     }
 };
 

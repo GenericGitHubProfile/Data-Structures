@@ -36,7 +36,7 @@ class SingleLinkedList:
         curNode = self.head
         if curNode.data == data:
             self.head = self.head.next
-            curNode.next = None
+            curNode = None
             return True
         curNode = self.head
         while curNode.next != None:
@@ -82,7 +82,7 @@ class SingleLinkedList:
         curNode = self.head
 
         while curNode.data != data:
-            if curNode.next == self.head:
+            if curNode.next == None:
                 return False
             else:
                 curNode = curNode.next

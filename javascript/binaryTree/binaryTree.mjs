@@ -1,3 +1,5 @@
+import { BinaryTreeBase } from './binaryTreeBase.mjs';
+
 class Node {
     constructor(data) {
         this.data = data;
@@ -6,7 +8,7 @@ class Node {
     }
 };
 
-class BinaryTree {
+export class BinaryTree extends BinaryTreeBase {
     constructor() {
         this.length = 0;
         this.root = null;

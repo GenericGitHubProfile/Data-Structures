@@ -1,3 +1,5 @@
+import { BinaryTreeBase } from './binaryTreeBase.mjs';
+
 class Node(data) {
     constructor(data) {
         this.data = data;
@@ -6,7 +8,7 @@ class Node(data) {
     }
 };
 
-class MaxHeap {
+export class MaxHeap extends BinaryTreeBase {
     constructor() {
         this.length = 0;
         this.head = null;
@@ -16,5 +18,5 @@ class MaxHeap {
         //adds Node
     }
 
-    
+
 };
