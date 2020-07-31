@@ -105,6 +105,8 @@ namespace DataStructures.SLL
                 this.head = this.head.next;
                 curNode = this.head;
                 this.length--;
+                // Stop if the List is empty
+                if (curNode == null) return;
             }
 
             while (curNode.next != null)
