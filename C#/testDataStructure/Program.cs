@@ -30,7 +30,7 @@ namespace testDataStructure
             sLL.printList();
 
             Node found = sLL.findNode(1);
-            Node next = found.next;
+            Node next = sLL.getNextNode(found);
 
             Console.WriteLine("");
 

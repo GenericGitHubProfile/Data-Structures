@@ -162,7 +162,6 @@ namespace DataStructures.SLL
         {
             Node curNode = this.head;
             Console.WriteLine(String.Format("\nPrinting List of Length: {0}", this.length));
-            //Console.WriteLine("Printing List of Length: " + this.length);
             while(curNode != null)
             {
                 Console.WriteLine(curNode.data);

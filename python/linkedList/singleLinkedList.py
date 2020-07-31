@@ -52,15 +52,15 @@ class SingleLinkedList:
 
     def deleteAllNodes(self, data):
         if(self.length == 0):
-            return False
-        deleted = False
+            return
         curNode = self.head
         while self.head.data == data:
             self.head = self.head.next
             curNode.next = null
             curNode = self.head
-            deleted = True
             self.length -= 1
+            if curNode == None:
+                return
 
         while curNode.next != None:
             if curNode.next.data == data:
@@ -68,7 +68,6 @@ class SingleLinkedList:
                 curNode.next = curNode.next.next
                 deleteNode.next = None
                 self.length -= 1
-                deleted = True
             else:
                 curNode = curNode.next
 
