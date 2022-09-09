@@ -1,0 +1,15 @@
+D:\other\C#\testing\data-structures\obj\Debug\net6.0\data-structures.csproj.AssemblyReference.cache
+D:\other\C#\testing\data-structures\obj\Debug\net6.0\data-structures.GeneratedMSBuildEditorConfig.editorconfig
+D:\other\C#\testing\data-structures\obj\Debug\net6.0\data-structures.AssemblyInfoInputs.cache
+D:\other\C#\testing\data-structures\obj\Debug\net6.0\data-structures.AssemblyInfo.cs
+D:\other\C#\testing\data-structures\obj\Debug\net6.0\data-structures.csproj.CoreCompileInputs.cache
+D:\other\C#\testing\data-structures\bin\Debug\net6.0\data-structures.exe
+D:\other\C#\testing\data-structures\bin\Debug\net6.0\data-structures.deps.json
+D:\other\C#\testing\data-structures\bin\Debug\net6.0\data-structures.runtimeconfig.json
+D:\other\C#\testing\data-structures\bin\Debug\net6.0\data-structures.dll
+D:\other\C#\testing\data-structures\bin\Debug\net6.0\data-structures.pdb
+D:\other\C#\testing\data-structures\obj\Debug\net6.0\data-structures.dll
+D:\other\C#\testing\data-structures\obj\Debug\net6.0\refint\data-structures.dll
+D:\other\C#\testing\data-structures\obj\Debug\net6.0\data-structures.pdb
+D:\other\C#\testing\data-structures\obj\Debug\net6.0\data-structures.genruntimeconfig.cache
+D:\other\C#\testing\data-structures\obj\Debug\net6.0\ref\data-structures.dll

@@ -1,3 +1,4 @@
-I am developing these as well, python data structures.
+Python Data Structures
+----------------------
 
-These are either going to be developed after the Javascript files, in tandem with, or sometimes before them. The greatest aim for this is to make the code as pythonic as possible while retaining functionality 
+These will be devloped alongside the Javascript implementations. The aim for this is to make the code pythonic to take advantage of the positives of the language while having common functionality with the other implementations

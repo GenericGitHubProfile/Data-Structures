@@ -1,3 +1,6 @@
+Rust Data Structures
+--------------------
+
 Rust was chosen as the next language to learn due to it's energy efficiency (as seen in paper DOI:10.1145/3136014.3136031).
 
 As well as this it has massively reduced memory usage and better speed compared to higher level languages like python and javascript, even beating out stronger languages such as C# and is competative with C++
